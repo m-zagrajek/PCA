@@ -1,0 +1,25 @@
+((*- extends 'article.tplx' -*))
+
+% Custom Title Page
+\title{My Custom Jupyter Notebook Report}
+\author{Marcin Zagrajek}
+\date{\today}
+
+((* block docclass *))
+\documentclass{Notebook}
+((* endblock docclass *))
+
+((* block heading *))
+\maketitle
+((* endblock heading *))
+
+((* block body *))
+\section{Introduction}
+Your customized content goes here.
+((* super() *))
+((* endblock body *))
+
+((* block bibliography *))
+\bibliographystyle{plain}
+\bibliography{ref}
+((* endblock bibliography *))
